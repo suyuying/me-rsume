@@ -32,4 +32,4 @@ jobs:
           aws-region: ap-northeast-3
 
       - name: Deploy to S3 bucket
-        run: aws s3 sync ./dist/ s3://myresume-for-zax --delete
+        run: aws s3 sync ./build/ s3://myresume-for-zax --delete
