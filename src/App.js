@@ -95,9 +95,7 @@ function MyResumeSide(props) {
               </svg>
             </span>
             <div className="text-left ml-2.5">
-              <p className="m-0 text-xs text-[#44566C] dark:text-[#A6A6A6]">
-                Phone
-              </p>
+              <p className="m-0 text-xs text-[#44566C] ">Phone</p>
               <p className="m-0  break-all">
                 <Link
                   className="m-0 hover:text-[#FA5252] duration-300 transition"
@@ -123,9 +121,7 @@ function MyResumeSide(props) {
               </svg>
             </span>
             <div className="text-left ml-2.5">
-              <p className="m-0 text-xs text-[#44566C] dark:text-[#A6A6A6]">
-                Location
-              </p>
+              <p className="m-0 text-xs text-[#44566C] ">Location</p>
               <p className="m-0  break-all">Taiwan</p>
             </div>
           </div>
@@ -144,9 +140,7 @@ function MyResumeSide(props) {
               </svg>
             </span>
             <div className="text-left ml-2.5">
-              <p className="m-0 text-xs text-[#44566C] dark:text-[#A6A6A6]">
-                Email
-              </p>
+              <p className="m-0 text-xs text-[#44566C] ">Email</p>
               <p className="m-0  break-all">
                 {" "}
                 <Link
@@ -173,9 +167,7 @@ function MyResumeSide(props) {
               </svg>
             </span>
             <div className="text-left ml-2.5">
-              <p className="m-0 text-xs text-[#44566C] dark:text-[#A6A6A6]">
-                Birthday
-              </p>
+              <p className="m-0 text-xs text-[#44566C] ">Birthday</p>
               <p className="m-0  break-all">August 19, 1993</p>
             </div>
           </div>
@@ -281,25 +273,19 @@ export default function MyResume() {
                     <h3 className="text-[35px]  font-medium pb-5 ">
                       What I do!
                     </h3>
-                    <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 ">
+                    <div className=" grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 ">
                       <div
-                        className=" dark:bg-transparent bg-violet-50 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4"
+                        className=" dark:bg-transparent bg-violet-50 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-3"
                         // style={{ background: "rgb(252, 244, 255)" }}
                       >
                         <GitHubAction className="inline-block  bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
                         {/* <MicrosoftAzureIcon className="inline-block ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" /> */}
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold ">Pipline</h3>
-                          <p className=" leading-8 text-gray-lite dark:text-[#A6A6A6] break-normal">
+                          <p className=" leading-8 text-gray-lite  break-normal">
                             Experience in github action. Make changes to code
                             that are then automatically tested and pushed out
                             for delivery and deployment.{" "}
-                            <Link
-                              to="https://github.com/suyuying/suyuying.github.io"
-                              className="link"
-                            >
-                              Check my webiste demo.
-                            </Link>
                           </p>
                         </div>
                       </div>
@@ -314,10 +300,18 @@ export default function MyResume() {
                           <h3 className=" text-xl font-semibold">
                             App Development
                           </h3>
-                          <p className=" leading-8 text-gray-lite dark:text-[#A6A6A6] break-normal">
+                          <p className=" leading-8 text-gray-lite  break-normal">
                             Use React to structure front-end of my website, and
                             Fastapi to develop my backend server. Build my api
-                            documenation and blog based on docusaurus.
+                            documenation and blog based on docusaurus
+                            <Link
+                              to="https://suyuying.github.io/"
+                              className="link"
+                              target="_blank"
+                            >
+                              {" "}
+                              Check my Blog.
+                            </Link>
                           </p>
                         </div>
                       </div>
@@ -328,7 +322,7 @@ export default function MyResume() {
 
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold">Monitor</h3>
-                          <p className=" leading-8 text-gray-lite dark:text-[#A6A6A6] break-normal">
+                          <p className=" leading-8 text-gray-lite  break-normal">
                             Experienced in monitor Software, such us Zabbix
                             ,Grafana,Elk.
                           </p>
@@ -340,9 +334,9 @@ export default function MyResume() {
                       >
                         <CloudflareIcon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
                         <AmazonWebIcon className=" inline-block ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-                        <div className="space-y-2 break-all">
+                        <div className="space-y-2 break-normal">
                           <h3 className=" text-xl font-semibold">CDN</h3>
-                          <p className=" leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                          <p className=" leading-8 text-gray-lite ">
                             Experienced in setting of Cloudflare, Aws
                             Cloudfront. Use ssl for saas and rate limit rules to
                             strengthen WebSite Information security.
@@ -355,11 +349,11 @@ export default function MyResume() {
                       >
                         <GoogleCloudIcon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
                         <AmazonWebIcon className="inline-block ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-                        <div className="space-y-2 break-all">
+                        <div className="space-y-2 break-normal">
                           <h3 className="text-xl font-semibold">
                             Cloud System
                           </h3>
-                          <p className=" leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                          <p className=" leading-8 text-gray-lite ">
                             Experienced in aws and gcp.
                           </p>
                         </div>
@@ -368,7 +362,7 @@ export default function MyResume() {
                         <NginxIcon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
                         <div className="space-y-2 break-all">
                           <h3 className=" font-semibold">HTTP Server</h3>
-                          <p className=" leading-8 text-gray-lite dark:text-[#A6A6A6] break-normal">
+                          <p className=" leading-8 text-gray-lite  break-normal">
                             Be familier with setting of nginx, get used to check
                             the official website of Nginx and stackoverflow to
                             get the answer, always conform to the request, well
@@ -471,10 +465,10 @@ export default function MyResume() {
                         </h4>
                         <div className=" mb-7">
                           <div className="flex justify-between py-1">
-                            <span className=" text-base text-gray-lite font-semibold dark:text-[#A6A6A6]">
+                            <span className=" text-base text-gray-lite font-semibold ">
                               Coding
                             </span>
-                            <span className=" text-base font-semibold text-gray-lite pr-5 dark:text-[#A6A6A6]">
+                            <span className=" text-base font-semibold text-gray-lite pr-5 ">
                               75%
                             </span>
                           </div>
@@ -511,10 +505,10 @@ export default function MyResume() {
                         </div>
                         <div className=" mb-7">
                           <div className="flex justify-between py-1">
-                            <span className=" text-base text-gray-lite font-semibold dark:text-[#A6A6A6]">
+                            <span className=" text-base text-gray-lite font-semibold ">
                               Pipline{" "}
                             </span>
-                            <span className=" text-base font-semibold text-gray-lite pr-5 dark:text-[#A6A6A6]">
+                            <span className=" text-base font-semibold text-gray-lite pr-5 ">
                               70%
                             </span>
                           </div>
@@ -551,10 +545,10 @@ export default function MyResume() {
                         </div>
                         <div className=" mb-7">
                           <div className="flex justify-between py-1">
-                            <span className=" text-base text-gray-lite font-semibold dark:text-[#A6A6A6]">
+                            <span className=" text-base text-gray-lite font-semibold ">
                               Team Work
                             </span>
-                            <span className=" text-base font-semibold text-gray-lite pr-5 dark:text-[#A6A6A6]">
+                            <span className=" text-base font-semibold text-gray-lite pr-5 ">
                               85%
                             </span>
                           </div>
@@ -591,10 +585,10 @@ export default function MyResume() {
                         </div>
                         <div className=" mb-7">
                           <div className="flex justify-between py-1">
-                            <span className=" text-base text-gray-lite font-semibold dark:text-[#A6A6A6]">
-                              Monitor
+                            <span className=" text-base text-gray-lite font-semibold ">
+                              Monitor System
                             </span>
-                            <span className=" text-base font-semibold text-gray-lite pr-5 dark:text-[#A6A6A6]">
+                            <span className=" text-base font-semibold text-gray-lite pr-5 ">
                               75%
                             </span>
                           </div>
@@ -639,12 +633,20 @@ export default function MyResume() {
                             Shell script
                           </button>
                           <button className="text-[15px] btn  btn-outline btn-primary ">
-                            Flexibility
+                            Python
                           </button>
                           <button className="btn  btn-outline btn-primary   text-[15px] ">
-                            Time Management
+                            GitHubAction
                           </button>
-
+                          <button className="btn  btn-outline btn-primary   text-[15px] ">
+                            Zabbix
+                          </button>
+                          <button className="btn  btn-outline btn-primary   text-[15px] ">
+                            container
+                          </button>
+                          <button className="btn  btn-outline btn-primary   text-[15px] ">
+                            Cloud
+                          </button>
                           <button className="btn  btn-outline btn-primary  text-[15px]">
                             English: Toeic 910
                           </button>
