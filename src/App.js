@@ -662,7 +662,6 @@ export default function MyResume() {
                           className="hover:text-[#FA5252] duration-300 transition"
                           to="https://suyuying.github.io./blog"
                           target="_blank"
-                          rel="noopener noreferrer"
                         >
                           go to my Blog
                         </Link>
