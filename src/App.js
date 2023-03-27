@@ -283,9 +283,9 @@ export default function MyResume() {
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold ">Pipline</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            Experience in github action. Make changes to code
-                            that are then automatically tested and pushed out
-                            for delivery and deployment.{" "}
+                            Experienced in github action and gitlab action. Make
+                            changes to code and push to repo, then automatically
+                            build for deployment.{" "}
                           </p>
                         </div>
                       </div>
@@ -626,7 +626,7 @@ export default function MyResume() {
                       </div>
                       <div className="col-span-1">
                         <h4 className="text-5xl  font-medium mb-8">
-                          Knowledges
+                          Knowledge
                         </h4>
                         <div className="flex gap-x-3 gap-y-3 md:gap-y-3 md:gap-x-3 flex-wrap">
                           <button className="text-[15px] btn  btn-outline btn-primary ">
@@ -642,10 +642,10 @@ export default function MyResume() {
                             Zabbix
                           </button>
                           <button className="btn  btn-outline btn-primary   text-[15px] ">
-                            container
+                            CI/CD
                           </button>
                           <button className="btn  btn-outline btn-primary   text-[15px] ">
-                            Cloud
+                            cloud service
                           </button>
                           <button className="btn  btn-outline btn-primary  text-[15px]">
                             English: Toeic 910
