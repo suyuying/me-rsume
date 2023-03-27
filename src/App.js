@@ -663,7 +663,7 @@ export default function MyResume() {
                           to="https://suyuying.github.io./blog"
                           target="_blank"
                         >
-                          go to my Blog
+                          Here is Link to my Blog
                         </Link>
                         .
                       </p>
