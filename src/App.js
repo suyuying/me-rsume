@@ -251,19 +251,24 @@ export default function MyResume() {
                       <div className="col-span-12 space-y-2.5">
                         <div className="lg:mr-16">
                           <p className="text-gray-lite dark:text-color-910 leading-7 dark:text-white">
-                            I'm Creative Director and Studious Engineer from
-                            Nantou, Taiwan, working in IT apartment. I am
-                            experienced Python developer, also familier with
-                            linux shell script and JS, enjoy turning trifling
-                            process into simple, reliable Code.
+                            I am a Creative Director and diligent Engineer from
+                            Nantou, Taiwan, currently working in the IT
+                            department. Excel in team coordination, and have
+                            extensive experience as a Python developer and also
+                            familiar with Linux shell script and JavaScript. I
+                            enjoy streamlining complex processes and turning
+                            them into simple, reliable code.
                           </p>
                           <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910 dark:text-white">
-                            Besides knowledge of coding, i also use piplien to
-                            make the exhausting build and deployment process
-                            become more efficient. On top of that, I also a good
-                            coordinator in team work, too. Understand the
-                            position of Devops, and my aim is to bring Accurate,
-                            Automation, Safety to the sever side.
+                            In addition to my coding skills, i also use pipline
+                            to make the exhausting build and deployment process
+                            become more efficient. I am also well-versed in
+                            setting up and managing AWS and GCP as part of my
+                            current job responsibilities. To ensure server
+                            stability, i am skilled in using various performance
+                            monitoring tools such as Zabbix and ELK. My goal is
+                            to bring accuracy, automation, and safety to the
+                            server side.
                           </p>
                         </div>
                       </div>
