@@ -288,14 +288,16 @@ export default function MyResume() {
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold ">Pipline</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            Experienced in github action and gitlab action. Make
-                            changes to code and push to repo, then automatically
-                            build for deployment.{" "}
+                            Experienced in github action and gitlab action.Build
+                            a process of automating daily task using GitLab CI
+                            to execute script. Furthermore,Make changes to code
+                            and push to repo, then automatically build for
+                            deployment.
                           </p>
                         </div>
                       </div>
                       <div
-                        className="about-box dark:bg-transparent bg-amber-50 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4"
+                        className="dark:bg-transparent bg-amber-50 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4"
                         // style={{ background: "rgb(254, 250, 240)" }}
                       >
                         <PythonIcon className="inline-block  bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
@@ -306,17 +308,20 @@ export default function MyResume() {
                             App Development
                           </h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            Use React to structure front-end of my website, and
-                            Fastapi to develop my backend server. Build my api
-                            documenation and blog based on docusaurus
+                            Using Python and shell scripts to automate daily
+                            tasks, such as checking certificate status and
+                            alerting on antivirus information.
                             <Link
                               to="https://suyuying.github.io/"
                               className="link"
                               target="_blank"
                             >
                               {" "}
-                              Check my Blog.
+                              Build my api documenation and Blog based on
+                              docusaurus.
                             </Link>
+                            Use React to structure front-end of my website, and
+                            Fastapi to develop my backend server.
                           </p>
                         </div>
                       </div>

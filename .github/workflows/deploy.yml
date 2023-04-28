@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to S3 and purge cloudfront
 
 on:
   push:
