@@ -251,13 +251,13 @@ export default function MyResume() {
                       <div className="col-span-12 space-y-2.5">
                         <div className="lg:mr-16">
                           <p className="text-gray-lite dark:text-color-910 leading-7 dark:text-white">
-                            I am a Creative Director and diligent Engineer from
-                            Nantou, Taiwan, currently working in the IT
-                            department. Excel in team coordination, and have
-                            extensive experience as a Python developer and also
-                            familiar with Linux shell script and JavaScript. I
-                            enjoy streamlining complex processes and turning
-                            them into simple, reliable code.
+                            I am a Creative and diligent Engineer from Nantou,
+                            Taiwan, currently working in the IT department.
+                            Excel in team coordination, and have extensive
+                            experience as a Python developer and also familiar
+                            with Linux shell script and JavaScript. I enjoy
+                            streamlining complex processes and turning them into
+                            simple, reliable code.
                           </p>
                           <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910 dark:text-white">
                             In addition to my coding skills, i also use pipline
@@ -328,8 +328,11 @@ export default function MyResume() {
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold">Monitor</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            Experienced in monitor Software, such us Zabbix
-                            ,Grafana,Elk.
+                            one of my project was built a monitor software to
+                            ensure the stability of instances, through
+                            monitoring various metrics and alerting if there are
+                            any issues, allowing us to quickly respond and
+                            resolve env problems
                           </p>
                         </div>
                       </div>
