@@ -243,7 +243,7 @@ export default function MyResume() {
             <div className="col-span-12 lg:col-span-8">
               <div className="lg:rounded-2xl bg-white dark:bg-[#111111]">
                 <div>
-                  <div className="pt-12 md:py-12 px-2 sm:px-5 md:px-10 lg:px-14">
+                  <div className="pt-12 md:pt-12 pb-6 px-2 sm:px-5 md:px-10 lg:px-14">
                     <h2 className="after:left-52 dark:text-white font-medium text-[35px]">
                       About Me
                     </h2>
@@ -288,11 +288,10 @@ export default function MyResume() {
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold ">Pipline</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            Experienced in github action and gitlab action.Build
-                            a process of automating daily task using GitLab CI
-                            to execute script. Furthermore,Make changes to code
-                            and push to repo, then automatically build for
-                            deployment.
+                            Build a process of automating daily task using
+                            GitLab CI to execute script. Furthermore,Make
+                            changes to code and push to repo, then automatically
+                            use github action to build and deploy.
                           </p>
                         </div>
                       </div>
@@ -309,8 +308,7 @@ export default function MyResume() {
                           </h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
                             Using Python and shell scripts to automate daily
-                            tasks, such as checking certificate status and
-                            alerting on antivirus information.
+                            tasks, such as checking certificate status.
                             <Link
                               to="https://suyuying.github.io/"
                               className="link"
@@ -333,11 +331,9 @@ export default function MyResume() {
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold">Monitor</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            one of my project was built a monitor software to
-                            ensure the stability of instances, through
-                            monitoring various metrics and alerting if there are
-                            any issues, allowing us to quickly respond and
-                            resolve env problems
+                            Project: Built a monitor software to ensure the
+                            stability of instances, through monitoring various
+                            metrics and alerting if there are any issues.
                           </p>
                         </div>
                       </div>
@@ -377,9 +373,7 @@ export default function MyResume() {
                           <h3 className=" font-semibold">HTTP Server</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
                             Be familier with setting of nginx, get used to check
-                            the official website of Nginx and stackoverflow to
-                            get the answer, always conform to the request, well
-                            done!
+                            the official website to find the answer.
                           </p>
                         </div>
                       </div>
