@@ -3,17 +3,19 @@ import { Link } from "react-router-dom";
 import AmazonWebIcon from "./components/amazon-web";
 import BlogIcon from "./components/blogicon";
 import GitHub from "./components/github";
+
 import MyResumePic from "./assets/img/resume/my_resume_pic.png";
 import GitHubAction from "./components/githubAction";
 import GoogleCloudIcon from "./components/google-cloud";
 // import GrafanaIcon from "./assets/img/resume/grafana-ar21.svg";
 import KibanaIcon from "./components/kibana";
 // import MicrosoftAzureIcon from "./components/microsoft_azure";
-import NginxIcon from "./components/nginx";
+// import NginxIcon from "./components/nginx";
 import ZabbixIcon from "./components/zabbix-icon";
 import PythonIcon from "./components/python";
 import ReactIcon from "./components/reacticon";
 import CloudflareIcon from "./components/cloudflare";
+import AnsibleIcon from "./components/Ansible";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 function useDarkSide() {
@@ -331,9 +333,10 @@ export default function MyResume() {
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold">Monitor</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            Project: Built a monitor software to ensure the
-                            stability of instances, through monitoring various
-                            metrics and alerting if there are any issues.
+                            Project: Built and maintain Zabbix software to
+                            ensure the stability of instances, through
+                            monitoring various metrics and alerting if there are
+                            any issues.
                           </p>
                         </div>
                       </div>
@@ -368,12 +371,12 @@ export default function MyResume() {
                         </div>
                       </div>
                       <div className="about-box dark:bg-transparent bg-fuchsia-50 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4">
-                        <NginxIcon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
+                        <AnsibleIcon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
                         <div className="space-y-2 break-all">
-                          <h3 className=" font-semibold">HTTP Server</h3>
+                          <h3 className="text-xl font-semibold">IaC</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            Be familier with setting of nginx, get used to check
-                            the official website to find the answer.
+                            Be familier with setting of Anisible, get used to
+                            check the official website to find the answer.
                           </p>
                         </div>
                       </div>
