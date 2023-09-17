@@ -3,18 +3,22 @@ import { Link } from "react-router-dom";
 import AmazonWebIcon from "./components/amazon-web";
 import BlogIcon from "./components/blogicon";
 import GitHub from "./components/github";
-
+import Jenkins from "./components/jenkins";
 import MyResumePic from "./assets/img/resume/my_resume_pic.png";
 import GitHubAction from "./components/githubAction";
 import GoogleCloudIcon from "./components/google-cloud";
+import Docker from "./components/docker";
+import Kubernetes from "./components/kubernetes";
+import Terraform from "./components/terraform";
 // import GrafanaIcon from "./assets/img/resume/grafana-ar21.svg";
+import Promehtues from "./components/prometheus";
 import KibanaIcon from "./components/kibana";
 // import MicrosoftAzureIcon from "./components/microsoft_azure";
 // import NginxIcon from "./components/nginx";
 import ZabbixIcon from "./components/zabbix-icon";
 import PythonIcon from "./components/python";
 import ReactIcon from "./components/reacticon";
-import CloudflareIcon from "./components/cloudflare";
+// import CloudflareIcon from "./components/cloudflare";
 import AnsibleIcon from "./components/Ansible";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 
@@ -253,24 +257,23 @@ export default function MyResume() {
                       <div className="col-span-12 space-y-2.5">
                         <div className="lg:mr-16">
                           <p className="text-gray-lite dark:text-color-910 leading-7 dark:text-white">
-                            I am a Creative and diligent Engineer from Nantou,
-                            Taiwan, currently working in the IT department.
-                            Excel in team coordination, and have extensive
-                            experience as a Python developer and also familiar
-                            with Linux shell script and JavaScript. I enjoy
-                            streamlining complex processes and turning them into
-                            simple, reliable code.
+                            I am a creative and diligent Engineer from Nantou,
+                            Taiwan, currently working in DevOps department.
+                            Excel in team coordination, have extensive
+                            experience as a Python developer, also familiar with
+                            Linux shell script, prefer to manage environment
+                            through configuration management tool, like Ansible,
+                            and Terraform. I enjoy streamlining complex
+                            processes and turning them into simple, reliable
+                            code.
                           </p>
                           <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910 dark:text-white">
-                            In addition to my coding skills, i also use pipline
-                            to make the exhausting build and deployment process
-                            become more efficient. I am also well-versed in
-                            setting up and managing AWS and GCP as part of my
-                            current job responsibilities. To ensure server
-                            stability, i am skilled in using various performance
-                            monitoring tools such as Zabbix and ELK. My goal is
-                            to bring accuracy, automation, and safety to the
-                            server side.
+                            Be well-versed in setting up and managing AWS and
+                            GCP as part of my current job responsibilities. To
+                            ensure server stability, i am skilled in using
+                            various performance monitoring tools such as Zabbix,
+                            Prometheus and ELK. My goal is to bring accuracy,
+                            automation, and safety to the server side.
                           </p>
                         </div>
                       </div>
@@ -286,14 +289,24 @@ export default function MyResume() {
                         // style={{ background: "rgb(252, 244, 255)" }}
                       >
                         <GitHubAction className="inline-block  bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
+                        <Jenkins className="inline-block  bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
+
                         {/* <MicrosoftAzureIcon className="inline-block ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" /> */}
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold ">Pipline</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            Build a process of automating daily task using
-                            GitLab CI to execute script. Furthermore,Make
-                            changes to code and push to repo, then automatically
-                            use github action to build and deploy.
+                            Continuous Integration technology like jenkins to
+                            execute Ansible role or shell script to update
+                            application. Besides,Use module of github action to
+                            build and deploy
+                            <Link
+                              to="https://d14ghvre931txr.cloudfront.net/"
+                              className="link"
+                              target="_blank"
+                            >
+                              {" "}
+                              my resume website.
+                            </Link>
                           </p>
                         </div>
                       </div>
@@ -310,7 +323,7 @@ export default function MyResume() {
                           </h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
                             Using Python and shell scripts to automate daily
-                            tasks, such as checking certificate status.
+                            tasks and develop my server.
                             <Link
                               to="https://suyuying.github.io/"
                               className="link"
@@ -320,23 +333,22 @@ export default function MyResume() {
                               Build my api documenation and Blog based on
                               docusaurus.
                             </Link>
-                            Use React to structure front-end of my website, and
-                            Fastapi to develop my backend server.
                           </p>
                         </div>
                       </div>
                       <div className="dark:bg-transparent bg-orange-100 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4">
                         <ZabbixIcon className="bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500 inline-block" />
                         <KibanaIcon className="ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500 inline-block" />
+                        <Promehtues className="ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500 inline-block" />
+
                         {/* <GrafanaIcon className="ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" /> */}
 
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold">Monitor</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            Project: Built and maintain Zabbix software to
-                            ensure the stability of instances, through
-                            monitoring various metrics and alerting if there are
-                            any issues.
+                            Experiences in Zabbix,Prometheus,ELK, from building
+                            server , collect data, send alert messages and
+                            management.
                           </p>
                         </div>
                       </div>
@@ -344,14 +356,14 @@ export default function MyResume() {
                         className="about-box dark:bg-transparent bg-red-100 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4"
                         // style={{ background: "rgb(255, 244, 244)" }}
                       >
-                        <CloudflareIcon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-                        <AmazonWebIcon className=" inline-block ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
+                        <Docker className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
+                        <Kubernetes className=" inline-block ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
                         <div className="space-y-2 break-normal">
-                          <h3 className=" text-xl font-semibold">CDN</h3>
+                          <h3 className=" text-xl font-semibold">Container</h3>
                           <p className=" leading-8 text-gray-lite ">
-                            Experienced in setting of Cloudflare, Aws
-                            Cloudfront. Use ssl for saas and rate limit rules to
-                            strengthen WebSite Information security.
+                            Familiarity with Kubernetes and Docker enables me to
+                            assist others in managing container orchestration
+                            and providing high availability.
                           </p>
                         </div>
                       </div>
@@ -366,17 +378,21 @@ export default function MyResume() {
                             Cloud System
                           </h3>
                           <p className=" leading-8 text-gray-lite ">
-                            Experienced in aws and gcp.
+                            Experienced in aws and gcp, from IAM setting, CDN,
+                            bucket ,load balancer and computing resources.
                           </p>
                         </div>
                       </div>
                       <div className="about-box dark:bg-transparent bg-fuchsia-50 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4">
                         <AnsibleIcon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
+                        <Terraform className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
+
                         <div className="space-y-2 break-all">
                           <h3 className="text-xl font-semibold">IaC</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            Be familier with setting of Anisible, get used to
-                            check the official website to find the answer.
+                            I like using tools can make environment much
+                            understandable and easy to maintain,like terraform
+                            and ansible.
                           </p>
                         </div>
                       </div>
@@ -454,23 +470,22 @@ export default function MyResume() {
                               Experience
                             </h4>
                           </div>
-                          <div className="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2 dark:bg-transparent bg-orange-100">
-                            <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                              2019 - 2021
-                            </span>
-                            <h3 className="text-xl "> Process Engineer </h3>
-                            <p className="dark:text-[#b7b7b7]">
-                              Uni-President Cor. Ltd.
-                            </p>
-                          </div>
+
                           <div className="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2 dark:bg-transparent bg-rose-100">
                             <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                              2021 - Present
+                              2021 - 2023
                             </span>
                             <h3 className="text-xl "> IT Engineer </h3>
                             <p className="dark:text-[#b7b7b7]">
                               Cloud Miner Ltd.
                             </p>
+                          </div>
+                          <div className="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2 dark:bg-transparent bg-orange-100">
+                            <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
+                              2023 - present
+                            </span>
+                            <h3 className="text-xl "> DevOps Engineer </h3>
+                            <p className="dark:text-[#b7b7b7]">Trevi Ltd.</p>
                           </div>
                         </div>
                       </div>
@@ -649,16 +664,16 @@ export default function MyResume() {
                         </h4>
                         <div className="flex gap-x-3 gap-y-3 md:gap-y-3 md:gap-x-3 flex-wrap">
                           <button className="text-[15px] btn  btn-outline btn-primary ">
-                            Shell script
+                            Terraform
                           </button>
                           <button className="text-[15px] btn  btn-outline btn-primary ">
                             Python
                           </button>
                           <button className="btn  btn-outline btn-primary   text-[15px] ">
-                            GitHubAction
+                            Kubernetes
                           </button>
                           <button className="btn  btn-outline btn-primary   text-[15px] ">
-                            Zabbix
+                            ELK
                           </button>
                           <button className="btn  btn-outline btn-primary   text-[15px] ">
                             CI/CD
@@ -666,8 +681,14 @@ export default function MyResume() {
                           <button className="btn  btn-outline btn-primary   text-[15px] ">
                             cloud service
                           </button>
+                          <button className="btn  btn-outline btn-primary   text-[15px] ">
+                            Ansible
+                          </button>
+                          <button className="btn  btn-outline btn-primary   text-[15px] ">
+                            Nginx
+                          </button>
                           <button className="btn  btn-outline btn-primary  text-[15px]">
-                            English: Toeic 910
+                            Toeic 910
                           </button>
                         </div>
                       </div>
