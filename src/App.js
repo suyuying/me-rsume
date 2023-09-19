@@ -50,7 +50,7 @@ function Switcher(props) {
 
 function MyResumeSide(props) {
   return (
-    <div className="sticky col-span-12 lg:col-span-4 hidden lg:block h-screen  top-44">
+    <div className="sticky col-span-12 lg:col-span-3 hidden lg:block h-screen  top-44">
       <div className=" w-full  lg:mb-0 mx-auto relative bg-white text-center dark:bg-[#111111] dark:text-white p-6 rounded-[20px]  ">
         <Switcher checked={props.checked} onChange={props.onChange} />
         <img
@@ -246,7 +246,7 @@ export default function MyResume() {
           <div className="container grid grid-cols-12 md:gap-x-10   ">
             <MyResumeSide checked={darkSide} onChange={toggleDarkMode} />
 
-            <div className="col-span-12 lg:col-span-8">
+            <div className="col-span-12 lg:col-start-4 col-end-14">
               <div className="lg:rounded-2xl bg-white dark:bg-[#111111]">
                 <div>
                   <div className="pt-12 md:pt-12 pb-6 px-2 sm:px-5 md:px-10 lg:px-14">
@@ -295,10 +295,13 @@ export default function MyResume() {
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold ">Pipline</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            Continuous Integration technology like jenkins to
-                            execute Ansible role or shell script to update
-                            application. Besides,Use module of github action to
-                            build and deploy
+                            1. In company, Utilize Jenkins to do CICD, execute
+                            Ansible roles for updating the application in UAT
+                            and PROD environment.{" "}
+                          </p>{" "}
+                          <p className=" leading-8 text-gray-lite  break-normal">
+                            2.Employ GitHub Actions modules for both building
+                            and deploying
                             <Link
                               to="https://d14ghvre931txr.cloudfront.net/"
                               className="link"
@@ -322,17 +325,23 @@ export default function MyResume() {
                             App Development
                           </h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            Using Python and shell scripts to automate daily
-                            tasks and develop my server.
+                            1. Using Python to automate daily tasks, such as use
+                            custom exporter of prometheus to monitor certificate
+                            expiry date , use pandas to deal with raw data and
+                            get data i need.
+                          </p>
+                          <p className=" leading-8 text-gray-lite  break-normal">
+                            2.
                             <Link
                               to="https://suyuying.github.io/"
                               className="link"
                               target="_blank"
                             >
                               {" "}
-                              Build my api documenation and Blog based on
-                              docusaurus.
-                            </Link>
+                              Build my api documenation and Blog
+                            </Link>{" "}
+                            based on docusaurus, and use FastAPI and react to
+                            build my own server
                           </p>
                         </div>
                       </div>
@@ -346,9 +355,39 @@ export default function MyResume() {
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold">Monitor</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            Experiences in Zabbix,Prometheus,ELK, from building
-                            server , collect data, send alert messages and
-                            management.
+                            1. Upgrading Zabbix from version 5 to 6, and make
+                            ensure this process doesn't' not interrupt service.
+                          </p>
+                          <p className=" leading-8 text-gray-lite  break-normal">
+                            2. Implement a logging system by setting up an ELK
+                            (Elasticsearch, Logstash, Kibana) cluster and
+                            deploying Filebeat on virtual machines using Ansible
+                            roles.
+                          </p>
+                          <p className=" leading-8 text-gray-lite  break-normal">
+                            3. Set up Prometheus and Kibana servers to gather
+                            metrics from Exporters to get data of basic services
+                            , TCP and HTTP status of application.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="about-box dark:bg-transparent bg-fuchsia-50 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4">
+                        <AnsibleIcon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
+                        <Terraform className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
+
+                        <div className="space-y-2 break-all">
+                          <h3 className="text-xl font-semibold">IaC</h3>
+                          <p className=" leading-8 text-gray-lite  break-normal">
+                            1. Utilize Ansible for version updates and
+                            configuration management like vm initialization ,
+                            install node-exporter and set up filebeats on a
+                            large number of machines
+                          </p>
+                          <p className=" leading-8 text-gray-lite  break-normal">
+                            2. Use Terraform to establish cloud environments,
+                            implement version control through CI/CD, and
+                            leverage Terraform Cloud for state management to
+                            ensure the stability of the environmen.
                           </p>
                         </div>
                       </div>
@@ -383,25 +422,12 @@ export default function MyResume() {
                           </p>
                         </div>
                       </div>
-                      <div className="about-box dark:bg-transparent bg-fuchsia-50 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4">
-                        <AnsibleIcon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-                        <Terraform className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-
-                        <div className="space-y-2 break-all">
-                          <h3 className="text-xl font-semibold">IaC</h3>
-                          <p className=" leading-8 text-gray-lite  break-normal">
-                            I like using tools can make environment much
-                            understandable and easy to maintain,like terraform
-                            and ansible.
-                          </p>
-                        </div>
-                      </div>
                     </div>
                   </section>
                 </div>
               </div>
             </div>
-            <div className="col-span-12  lg:col-start-5 col-end-13 mt-8">
+            <div className="col-span-12  lg:col-start-4 col-end-14 mt-8">
               <div className="lg:rounded-2xl bg-white dark:bg-[#111111]">
                 <div>
                   <div className="container px-4 sm:px-5 md:px-10 lg:px-14">
