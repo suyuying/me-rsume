@@ -295,9 +295,9 @@ export default function MyResume() {
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold ">Pipline</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            1. In company, Utilize Jenkins to do CICD, execute
-                            Ansible roles for updating the application in UAT
-                            and PROD environment.{" "}
+                            1. Utilize Jenkins to do CICD, execute Ansible roles
+                            for updating the application in UAT and PROD
+                            environment.{" "}
                           </p>{" "}
                           <p className=" leading-8 text-gray-lite  break-normal">
                             2.Employ GitHub Actions modules for both building
