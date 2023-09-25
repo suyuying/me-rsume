@@ -147,15 +147,7 @@ function MyResumeSide(props) {
             </span>
             <div className="text-left ml-2.5">
               <p className="m-0 text-xs text-[#44566C] ">Email</p>
-              <p className="m-0  break-all">
-                {" "}
-                <Link
-                  className="m-0 hover:text-[#FA5252] duration-300 transition"
-                  to="z0952657360@gmail.com"
-                >
-                  z0952657360@gmail.com
-                </Link>
-              </p>
+              <p className="m-0  break-all"> z0952657360@gmail.com</p>
             </div>
           </div>
           <div className="flex py-2.5 undefined">
