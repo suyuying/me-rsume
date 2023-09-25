@@ -105,7 +105,7 @@ function MyResumeSide(props) {
               <p className="m-0  break-all">
                 <Link
                   className="m-0 hover:text-[#FA5252] duration-300 transition"
-                  to="tel:+1234567890"
+                  to="tel:+886952657360"
                 >
                   +886 952 657 360
                 </Link>
