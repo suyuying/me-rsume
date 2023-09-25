@@ -151,7 +151,7 @@ function MyResumeSide(props) {
                 {" "}
                 <Link
                   className="m-0 hover:text-[#FA5252] duration-300 transition"
-                  to="mailto:ibthemes21@gmail.com"
+                  to="z0952657360@gmail.com"
                 >
                   z0952657360@gmail.com
                 </Link>
