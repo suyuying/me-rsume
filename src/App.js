@@ -15,6 +15,7 @@ import Promehtues from "./components/prometheus";
 import KibanaIcon from "./components/kibana";
 // import MicrosoftAzureIcon from "./components/microsoft_azure";
 // import NginxIcon from "./components/nginx";
+import Pulumicon from "./components/pulumi";
 import ZabbixIcon from "./components/zabbix-icon";
 import PythonIcon from "./components/python";
 import ReactIcon from "./components/reacticon";
@@ -52,7 +53,11 @@ function MyResumeSide(props) {
   return (
     <div className="sticky col-span-12 lg:col-span-3 hidden lg:block h-screen  top-44">
       <div className=" w-full  lg:mb-0 mx-auto relative bg-white text-center dark:bg-[#111111] dark:text-white p-6 rounded-[20px]  ">
-        <Switcher checked={props.checked} onChange={props.onChange} />
+        <Switcher
+          checked={props.checked}
+          onChange={props.onChange}
+          className="btn bg-black dark:bg-black  z-20"
+        />
         <img
           src={MyResumePic}
           alt="MyResumePic"
@@ -60,11 +65,12 @@ function MyResumeSide(props) {
           height="240"
           decoding="async"
           data-nimg="1"
-          className="w-[200px] h-[240px] absolute left-[50%] transform -translate-x-[50%] -translate-y-[10%] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px]"
+          className="w-[200px] h-[240px] absolute left-[50%] transform -translate-x-[50%] -translate-y-[10%] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px] z-3"
         />
+
         <div className="flex "></div>
         <div className="pt-[10px] pb-2">
-          <h1 className="text-[26px] font-semibold ">Zax Su</h1>
+          <h1 className="text-[26px] font-semibold ">Ford Su</h1>
           <h3 className="mb-4 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-cyan-300">
             IT/DevOps
           </h3>
@@ -169,48 +175,6 @@ function MyResumeSide(props) {
               <p className="m-0  break-all">August 19, 1993</p>
             </div>
           </div>
-
-          <Link
-            to="https://myresume-for-zax.s3.ap-northeast-3.amazonaws.com/myresume.pdf"
-            target="_blank"
-            className="m-0 border-spacing-1 inline-flex items-center mx-auto bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476] to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] "
-          >
-            <svg
-              width="22px"
-              height="23px"
-              viewBox="0 0 1024.00 1024.00"
-              className="icon"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="#000000"
-            >
-              <g id="SVGRepo_bgCarrier" strokeWidth="0" />
-
-              <g
-                id="SVGRepo_tracerCarrier"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M768 810.7c-23.6 0-42.7-19.1-42.7-42.7s19.1-42.7 42.7-42.7c94.1 0 170.7-76.6 170.7-170.7 0-89.6-70.1-164.3-159.5-170.1L754 383l-10.7-22.7c-42.2-89.3-133-147-231.3-147s-189.1 57.7-231.3 147L270 383l-25.1 1.6c-89.5 5.8-159.5 80.5-159.5 170.1 0 94.1 76.6 170.7 170.7 170.7 23.6 0 42.7 19.1 42.7 42.7s-19.1 42.7-42.7 42.7c-141.2 0-256-114.8-256-256 0-126.1 92.5-232.5 214.7-252.4C274.8 195.7 388.9 128 512 128s237.2 67.7 297.3 174.2C931.5 322.1 1024 428.6 1024 554.7c0 141.1-114.8 256-256 256z"
-                  fill="#3688FF"
-                />
-
-                <path
-                  d="M512 938.7c-10.9 0-21.8-4.2-30.2-12.5l-128-128c-16.7-16.7-16.7-43.7 0-60.3 16.6-16.7 43.7-16.7 60.3 0l97.8 97.8 97.8-97.8c16.6-16.7 43.7-16.7 60.3 0 16.7 16.7 16.7 43.7 0 60.3l-128 128c-8.2 8.3-19.1 12.5-30 12.5z"
-                  fill="#5F6379"
-                />
-
-                <path
-                  d="M512 938.7c-23.6 0-42.7-19.1-42.7-42.7V597.3c0-23.6 19.1-42.7 42.7-42.7s42.7 19.1 42.7 42.7V896c0 23.6-19.1 42.7-42.7 42.7z"
-                  fill="#5F6379"
-                />
-              </g>
-            </svg>
-            Download CV
-          </Link>
         </div>
       </div>
     </div>
@@ -289,7 +253,8 @@ export default function MyResume() {
                           <p className=" leading-8 text-gray-lite  break-normal">
                             1. Utilize Jenkins to do CICD, execute Ansible roles
                             for updating the application in UAT and PROD
-                            environment.{" "}
+                            environment, and maintain the configuration of GCP
+                            security groups through terraform{" "}
                           </p>{" "}
                           <p className=" leading-8 text-gray-lite  break-normal">
                             2.Employ GitHub Actions modules for both building
@@ -318,9 +283,9 @@ export default function MyResume() {
                           </h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
                             1. Using Python to automate daily tasks, such as use
-                            custom exporter of prometheus to monitor certificate
-                            expiry date , use pandas to deal with raw data and
-                            get data i need.
+                            flask to build custom exporter of prometheus to
+                            monitor certificate expiry date , use pandas to deal
+                            with raw data and get data i need.
                           </p>
                           <p className=" leading-8 text-gray-lite  break-normal">
                             2.
@@ -357,29 +322,31 @@ export default function MyResume() {
                             roles.
                           </p>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            3. Set up Prometheus and Kibana servers to gather
-                            metrics from Exporters to get data of basic services
-                            , TCP and HTTP status of application.
+                            3. Set up Prometheus servers to gather metrics from
+                            Exporters to get data of basic services , TCP and
+                            HTTP status of application, and show data in
+                            grafana.
                           </p>
                         </div>
                       </div>
                       <div className="about-box dark:bg-transparent bg-fuchsia-50 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4">
                         <AnsibleIcon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
                         <Terraform className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
+                        <Pulumicon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
 
                         <div className="space-y-2 break-all">
                           <h3 className="text-xl font-semibold">IaC</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
                             1. Utilize Ansible for version updates and
                             configuration management like vm initialization ,
-                            install node-exporter and set up filebeats on a
-                            large number of machines
+                            set up filebeat on a large number of machines
                           </p>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            2. Use Terraform to establish cloud environments,
-                            implement version control through CI/CD, and
-                            leverage Terraform Cloud for state management to
-                            ensure the stability of the environmen.
+                            2. Use Terraform and Pulumi to establish cloud
+                            environments, implement version control through
+                            CI/CD, and leverage jenkinks CICD for gcp secutility
+                            groups management to ensure the stability of the
+                            environment.
                           </p>
                         </div>
                       </div>
@@ -409,8 +376,8 @@ export default function MyResume() {
                             Cloud System
                           </h3>
                           <p className=" leading-8 text-gray-lite ">
-                            Experienced in aws and gcp, from IAM setting, CDN,
-                            bucket ,load balancer and computing resources.
+                            Experienced in aws and gcp, from IAM setting, VPC,
+                            CDN, bucket ,load balancer and computing resources.
                           </p>
                         </div>
                       </div>
