@@ -15,7 +15,7 @@ import Promehtues from "./components/prometheus";
 import KibanaIcon from "./components/kibana";
 // import MicrosoftAzureIcon from "./components/microsoft_azure";
 // import NginxIcon from "./components/nginx";
-import Pulumicon from "./components/pulumi";
+// import Pulumicon from "./components/pulumi";
 import ZabbixIcon from "./components/zabbix-icon";
 import PythonIcon from "./components/python";
 import ReactIcon from "./components/reacticon";
@@ -213,23 +213,26 @@ export default function MyResume() {
                       <div className="col-span-12 space-y-2.5">
                         <div className="lg:mr-16">
                           <p className="text-gray-lite dark:text-color-910 leading-7 dark:text-white">
-                            I am a creative and diligent Engineer from Nantou,
-                            Taiwan, currently working in DevOps department.
-                            Excel in team coordination, have extensive
-                            experience as a Python developer, also familiar with
-                            Linux shell script, prefer to manage environment
-                            through configuration management tool, like Ansible,
-                            and Terraform. I enjoy streamlining complex
-                            processes and turning them into simple, reliable
-                            code.
+                            I independently manage and set up company systems,
+                            including CI/CD (Jenkins), logging systems(elastic
+                            and loki), machine and application monitoring
+                            systems(prometheus), reverse proxies, and more.
+                            Throughout the process, I frequently communicate
+                            with RD and PM to discuss requirements and achieve
+                            goals, which has significantly enhanced my
+                            communication skills. I am also pursuing further
+                            education in Kubernetes and working with the company
+                            to transition services to Kubernetes.
                           </p>
                           <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910 dark:text-white">
-                            Be well-versed in setting up and managing AWS and
-                            GCP as part of my current job responsibilities. To
-                            ensure server stability, i am skilled in using
-                            various performance monitoring tools such as Zabbix,
-                            Prometheus and ELK. My goal is to bring accuracy,
-                            automation, and safety to the server side.
+                            As part of my job responsibilities, I am well-versed
+                            in network design and machine provisioning in AWS
+                            and GCP. I am proficient in writing scripts using
+                            Python or Linux shell scripting to convert routine,
+                            tedious management tasks into clear and concise
+                            code. Moreover, I prefer managing environments using
+                            configuration management tools like Ansible and
+                            Terraform.
                           </p>
                         </div>
                       </div>
@@ -251,10 +254,9 @@ export default function MyResume() {
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold ">Pipline</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            1. Utilize Jenkins to do CICD, execute Ansible roles
-                            for updating the application in UAT and PROD
-                            environment, and maintain the configuration of GCP
-                            security groups through terraform{" "}
+                            1. Utilize Jenkins to do CICD for build and deploy
+                            the application , and update monitoring system
+                            setting through jenkins{" "}
                           </p>{" "}
                           <p className=" leading-8 text-gray-lite  break-normal">
                             2.Employ GitHub Actions modules for both building
@@ -284,8 +286,9 @@ export default function MyResume() {
                           <p className=" leading-8 text-gray-lite  break-normal">
                             1. Using Python to automate daily tasks, such as use
                             flask to build custom exporter of prometheus to
-                            monitor certificate expiry date , use pandas to deal
-                            with raw data and get data i need.
+                            monitor certificate expiry date , and use FastAPI to
+                            build hook of alertmanager to inform alert to
+                            communication software.
                           </p>
                           <p className=" leading-8 text-gray-lite  break-normal">
                             2.
@@ -295,10 +298,10 @@ export default function MyResume() {
                               target="_blank"
                             >
                               {" "}
-                              Build my api documenation and Blog
+                              Build my api documentation and Blog
                             </Link>{" "}
                             based on docusaurus, and use FastAPI and react to
-                            build my own server
+                            build my own server.
                           </p>
                         </div>
                       </div>
@@ -310,43 +313,44 @@ export default function MyResume() {
                         {/* <GrafanaIcon className="ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" /> */}
 
                         <div className="space-y-2 break-all">
-                          <h3 className=" text-xl font-semibold">Monitor</h3>
+                          <h3 className=" text-xl font-semibold">
+                            Monitoring System
+                          </h3>
+                          {/* <p className=" leading-8 text-gray-lite  break-normal">
+                            1. Upgrading Zabbix from version 5 to 6, and ensure
+                            this process doesn't' not interrupt service.
+                          </p> */}
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            1. Upgrading Zabbix from version 5 to 6, and make
-                            ensure this process doesn't' not interrupt service.
+                            1. Implement a logging system by setting up an
+                            Elasticsearch cluster and deal data with Ingest
+                            Pipelines , deploy Filebeat on virtual machines
+                            using Ansible roles.
                           </p>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            2. Implement a logging system by setting up an ELK
-                            (Elasticsearch, Logstash, Kibana) cluster and
-                            deploying Filebeat on virtual machines using Ansible
-                            roles.
-                          </p>
-                          <p className=" leading-8 text-gray-lite  break-normal">
-                            3. Set up Prometheus servers to gather metrics from
+                            2. Set up Prometheus servers to gather metrics from
                             Exporters to get data of basic services , TCP and
                             HTTP status of application, and show data in
-                            grafana.
+                            grafana, send alert to webhook made by FastAPI.
                           </p>
                         </div>
                       </div>
                       <div className="about-box dark:bg-transparent bg-fuchsia-50 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4">
                         <AnsibleIcon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
                         <Terraform className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-                        <Pulumicon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
 
                         <div className="space-y-2 break-all">
                           <h3 className="text-xl font-semibold">IaC</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            1. Utilize Ansible for version updates and
+                            1. Utilize Ansible for updates application and
                             configuration management like vm initialization ,
-                            set up filebeat on a large number of machines
+                            setting log collection, node exporter installation
+                            and more.
                           </p>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            2. Use Terraform and Pulumi to establish cloud
-                            environments, implement version control through
-                            CI/CD, and leverage jenkinks CICD for gcp secutility
-                            groups management to ensure the stability of the
-                            environment.
+                            2. Use Terraform's export functionality to generate
+                            machine configurations and create multiple machines,
+                            while also managing GCP security groups with
+                            Terraform.
                           </p>
                         </div>
                       </div>
@@ -359,9 +363,13 @@ export default function MyResume() {
                         <div className="space-y-2 break-normal">
                           <h3 className=" text-xl font-semibold">Container</h3>
                           <p className=" leading-8 text-gray-lite ">
-                            Familiarity with Kubernetes and Docker enables me to
-                            assist others in managing container orchestration
-                            and providing high availability.
+                            1. Deploy Prometheus monitoring system, Jenkins, and
+                            applications developed by RD using containers.
+                          </p>
+                          <p className=" leading-8 text-gray-lite ">
+                            2. Managing on-premises Kubernetes clusters using
+                            Helm for package management, ArgoCD for deployment,
+                            and leveraging Istio for traffic control.
                           </p>
                         </div>
                       </div>
@@ -376,8 +384,17 @@ export default function MyResume() {
                             Cloud System
                           </h3>
                           <p className=" leading-8 text-gray-lite ">
-                            Experienced in aws and gcp, from IAM setting, VPC,
-                            CDN, bucket ,load balancer and computing resources.
+                            1. Experienced in aws and gcp, from IAM setting,
+                            VPC, NAT, CDN, bucket ,load balancer and computing
+                            resources.
+                          </p>
+                          <p className=" leading-8 text-gray-lite ">
+                            2. Employing SSL for SaaS (via Cloudflare) to
+                            enhance information security protection, in
+                            combination with a Load Balancer to effectively
+                            distribute traffic to virtual machines across two
+                            availability zones, thereby enhancing fault
+                            tolerance.
                           </p>
                         </div>
                       </div>
@@ -417,7 +434,10 @@ export default function MyResume() {
                             <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
                               2017-2019
                             </span>
-                            <h3 className="text-xl "> Master of Science</h3>
+                            <h3 className="text-xl ">
+                              {" "}
+                              Master of Food Science{" "}
+                            </h3>
                             <p className="dark:text-[#b7b7b7]">
                               National Taiwan University, Taiwan
                             </p>
@@ -458,16 +478,16 @@ export default function MyResume() {
 
                           <div className="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2 dark:bg-transparent bg-rose-100">
                             <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                              2021 - 2023
+                              2021/10 - 2023/06
                             </span>
-                            <h3 className="text-xl "> IT Engineer </h3>
+                            <h3 className="text-xl "> DevOps Engineer </h3>
                             <p className="dark:text-[#b7b7b7]">
                               Cloud Miner Ltd.
                             </p>
                           </div>
                           <div className="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2 dark:bg-transparent bg-orange-100">
                             <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                              2023 - present
+                              2023/06 - present
                             </span>
                             <h3 className="text-xl "> DevOps Engineer </h3>
                             <p className="dark:text-[#b7b7b7]">Trevi Ltd.</p>
@@ -655,13 +675,19 @@ export default function MyResume() {
                             Python
                           </button>
                           <button className="btn  btn-outline btn-primary   text-[15px] ">
-                            Kubernetes
+                            Container
                           </button>
                           <button className="btn  btn-outline btn-primary   text-[15px] ">
-                            ELK
+                            Elasticsearch
                           </button>
                           <button className="btn  btn-outline btn-primary   text-[15px] ">
-                            CI/CD
+                            Prometheus
+                          </button>
+                          <button className="btn  btn-outline btn-primary   text-[15px] ">
+                            Grafana
+                          </button>
+                          <button className="btn  btn-outline btn-primary   text-[15px] ">
+                            Jenkins CI/CD
                           </button>
                           <button className="btn  btn-outline btn-primary   text-[15px] ">
                             cloud service
