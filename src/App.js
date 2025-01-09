@@ -213,16 +213,17 @@ export default function MyResume() {
                       <div className="col-span-12 space-y-2.5">
                         <div className="lg:mr-16">
                           <p className="text-gray-lite dark:text-color-910 leading-7 dark:text-white">
-                            I independently manage and set up company systems,
-                            including CI/CD (Jenkins), logging systems(elastic
-                            and loki), machine and application monitoring
-                            systems(prometheus), reverse proxies, and more.
-                            Throughout the process, I frequently communicate
-                            with RD and PM to discuss requirements and achieve
-                            goals, which has significantly enhanced my
-                            communication skills. I am also pursuing further
-                            education in Kubernetes and working with the company
-                            to transition services to Kubernetes.
+                            Hi, My name is Ford, I independently manage and set
+                            up company systems, including CI/CD (Jenkins),
+                            logging systems(elastic and loki), machine and
+                            application monitoring systems(prometheus), reverse
+                            proxies, and more. Throughout the process, I
+                            frequently communicate with RD and PM to discuss
+                            requirements and achieve goals, which has
+                            significantly enhanced my communication skills. I am
+                            also pursuing further education in Kubernetes and
+                            working with the company to transition services to
+                            Kubernetes.
                           </p>
                           <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910 dark:text-white">
                             As part of my job responsibilities, I am well-versed
@@ -254,9 +255,9 @@ export default function MyResume() {
                         <div className="space-y-2 break-all">
                           <h3 className=" text-xl font-semibold ">Pipline</h3>
                           <p className=" leading-8 text-gray-lite  break-normal">
-                            1. Utilize Jenkins to do CICD for build and deploy
-                            the application , and update monitoring system
-                            setting through jenkins{" "}
+                            1. In company, Utilize Jenkins to do CICD for build
+                            and deploy the application , and update monitoring
+                            system setting through jenkins{" "}
                           </p>{" "}
                           <p className=" leading-8 text-gray-lite  break-normal">
                             2.Employ GitHub Actions modules for both building
@@ -367,9 +368,10 @@ export default function MyResume() {
                             applications developed by RD using containers.
                           </p>
                           <p className=" leading-8 text-gray-lite ">
-                            2. Managing on-premises Kubernetes clusters using
-                            Helm for package management, ArgoCD for deployment,
-                            and leveraging Istio for traffic control.
+                            2. Managing on-premises Kubernetes clusters in a
+                            company environment, leveraging Helm for efficient
+                            package management and utilizing ArgoCD to automate
+                            deployment.
                           </p>
                         </div>
                       </div>
@@ -384,18 +386,13 @@ export default function MyResume() {
                             Cloud System
                           </h3>
                           <p className=" leading-8 text-gray-lite ">
-                            1. Experienced in aws and gcp, from IAM setting,
-                            VPC, NAT, CDN, bucket ,load balancer and computing
-                            resources.
+                            1. Extensive experience in AWS and GCP, successfully
+                            establishing complete operational environments for
+                            the company. This includes configuring load
+                            balancers, VPCs, NAT gateways, CDNs, and storage
+                            buckets to ensure optimal performance.
                           </p>
-                          <p className=" leading-8 text-gray-lite ">
-                            2. Employing SSL for SaaS (via Cloudflare) to
-                            enhance information security protection, in
-                            combination with a Load Balancer to effectively
-                            distribute traffic to virtual machines across two
-                            availability zones, thereby enhancing fault
-                            tolerance.
-                          </p>
+                          <p className=" leading-8 text-gray-lite "></p>
                         </div>
                       </div>
                     </div>
