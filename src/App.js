@@ -220,179 +220,124 @@ export default function MyResume() {
                             proxies, and more. Throughout the process, I
                             frequently communicate with RD and PM to discuss
                             requirements and achieve goals, which has
-                            significantly enhanced my communication skills. I am
-                            also pursuing further education in Kubernetes and
-                            working with the company to transition services to
-                            Kubernetes.
+                            significantly enhanced my communication skills.
                           </p>
                           <p className="text-gray-lite leading-7 mt-2.5 dark:text-color-910 dark:text-white">
                             As part of my job responsibilities, I am well-versed
                             in network design and machine provisioning in AWS
                             and GCP. I am proficient in writing scripts using
-                            Python or Linux shell scripting to convert routine,
-                            tedious management tasks into clear and concise
-                            code. Moreover, I prefer managing environments using
-                            configuration management tools like Ansible and
-                            Terraform.
+                            Python or Linux shell scripting or other
+                            configuration management tools like Ansible to
+                            convert routine, tedious management tasks into clear
+                            and concise code.
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                   <section className="pb-12 px-2 sm:px-5 md:px-10 lg:px-14 dark:text-white">
-                    <h3 className="text-[35px]  font-medium pb-5 ">
-                      What I do!
-                    </h3>
-                    <div className=" grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 ">
-                      <div
-                        className=" dark:bg-transparent bg-violet-50 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-3"
-                        // style={{ background: "rgb(252, 244, 255)" }}
-                      >
-                        <GitHubAction className="inline-block  bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-                        <Jenkins className="inline-block  bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-
-                        {/* <MicrosoftAzureIcon className="inline-block ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" /> */}
-                        <div className="space-y-2 break-all">
-                          <h3 className=" text-xl font-semibold ">Pipline</h3>
-                          <p className=" leading-8 text-gray-lite  break-normal">
-                            1. In company, Utilize Jenkins to do CICD for build
-                            and deploy the application , and update monitoring
-                            system setting through jenkins{" "}
-                          </p>{" "}
-                          <p className=" leading-8 text-gray-lite  break-normal">
-                            2.Employ GitHub Actions modules for both building
-                            and deploying
-                            <Link
-                              to="https://d14ghvre931txr.cloudfront.net/"
-                              className="link"
-                              target="_blank"
-                            >
-                              {" "}
-                              my resume website.
-                            </Link>
+                    <h3 className="text-[35px] font-medium pb-5">What I do!</h3>
+                    <div className="space-y-8">
+                      <div className="flex items-start gap-3">
+                        <span className="text-xl font-semibold text-gray-500">
+                          1.
+                        </span>
+                        <div>
+                          <h4 className="text-xl font-semibold">
+                            VM-to-Kubernetes Migration and GitOps Implementation
+                          </h4>
+                          <p className="text-gray-lite leading-8">
+                            a. Work closely with RD teams to confirm whether
+                            services were stateless or stateful, and defined a
+                            consistent naming convention for Kubernetes
+                            services.
+                            <br />
+                            b. Collected historical log usage data from the
+                            company's logging system, and based on Grafana’s
+                            official recommendation for log processing
+                            (20GB/day), chose the single-binary architecture of
+                            Loki as a suitable deployment model.
+                            <br />
+                            c. Used a GitOps tool (ArgoCD) with Git version
+                            control to manage Kubernetes deployments, ensuring
+                            all deployment changes are traceable.
                           </p>
                         </div>
                       </div>
-                      <div
-                        className="dark:bg-transparent bg-amber-50 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4"
-                        // style={{ background: "rgb(254, 250, 240)" }}
-                      >
-                        <PythonIcon className="inline-block  bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-                        <ReactIcon className=" inline-block ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
 
-                        <div className="space-y-2 break-all">
-                          <h3 className=" text-xl font-semibold">
-                            App Development
-                          </h3>
-                          <p className=" leading-8 text-gray-lite  break-normal">
-                            1. Using Python to automate daily tasks, such as use
-                            flask to build custom exporter of prometheus to
-                            monitor certificate expiry date , and use FastAPI to
-                            build hook of alertmanager to inform alert to
-                            communication software.
-                          </p>
-                          <p className=" leading-8 text-gray-lite  break-normal">
-                            2.
-                            <Link
-                              to="https://suyuying.github.io/"
-                              className="link"
-                              target="_blank"
-                            >
-                              {" "}
-                              Build my api documentation and Blog
-                            </Link>{" "}
-                            based on docusaurus, and use FastAPI and react to
-                            build my own server.
+                      <div className="flex items-start gap-3">
+                        <span className="text-xl font-semibold text-gray-500">
+                          2.
+                        </span>
+                        <div>
+                          <h4 className="text-xl font-semibold">
+                            Enhancing the deployment and rollback strategy and
+                            templated the process
+                          </h4>
+                          <p className="text-gray-lite leading-8">
+                            a. To enhance traceability and clarity, we change
+                            tag format to combine a timestamp and commit ID.
+                            <br />
+                            b. Used Python’s Jinja2 templating engine in
+                            combination with YAML configuration files to
+                            dynamically generate Jenkinsfiles and create
+                            corresponding Jenkins jobs, it increase the effiency
+                            of building environments.
                           </p>
                         </div>
                       </div>
-                      <div className="dark:bg-transparent bg-orange-100 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4">
-                        <ZabbixIcon className="bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500 inline-block" />
-                        <KibanaIcon className="ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500 inline-block" />
-                        <Promehtues className="ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500 inline-block" />
 
-                        {/* <GrafanaIcon className="ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" /> */}
-
-                        <div className="space-y-2 break-all">
-                          <h3 className=" text-xl font-semibold">
-                            Monitoring System
-                          </h3>
-                          {/* <p className=" leading-8 text-gray-lite  break-normal">
-                            1. Upgrading Zabbix from version 5 to 6, and ensure
-                            this process doesn't' not interrupt service.
-                          </p> */}
-                          <p className=" leading-8 text-gray-lite  break-normal">
-                            1. Implement a logging system by setting up an
-                            Elasticsearch cluster and deal data with Ingest
-                            Pipelines , deploy Filebeat on virtual machines
-                            using Ansible roles.
-                          </p>
-                          <p className=" leading-8 text-gray-lite  break-normal">
-                            2. Set up Prometheus servers to gather metrics from
-                            Exporters to get data of basic services , TCP and
-                            HTTP status of application, and show data in
-                            grafana, send alert to webhook made by FastAPI.
+                      <div className="flex items-start gap-3">
+                        <span className="text-xl font-semibold text-gray-500">
+                          3.
+                        </span>
+                        <div>
+                          <h4 className="text-xl font-semibold">
+                            Streamlining Server Provisioning with Ansible
+                          </h4>
+                          <p className="text-gray-lite leading-8">
+                            Due to the inefficiency of manual setup processes, I
+                            initiated a project to replace repetitive deployment
+                            tasks with Ansible.
                           </p>
                         </div>
                       </div>
-                      <div className="about-box dark:bg-transparent bg-fuchsia-50 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4">
-                        <AnsibleIcon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-                        <Terraform className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-
-                        <div className="space-y-2 break-all">
-                          <h3 className="text-xl font-semibold">IaC</h3>
-                          <p className=" leading-8 text-gray-lite  break-normal">
-                            1. Utilize Ansible for updates application and
-                            configuration management like vm initialization ,
-                            setting log collection, node exporter installation
-                            and more.
-                          </p>
-                          <p className=" leading-8 text-gray-lite  break-normal">
-                            2. Use Terraform's export functionality to generate
-                            machine configurations and create multiple machines,
-                            while also managing GCP security groups with
-                            Terraform.
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        className="about-box dark:bg-transparent bg-red-100 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4"
-                        // style={{ background: "rgb(255, 244, 244)" }}
-                      >
-                        <Docker className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-                        <Kubernetes className=" inline-block ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-                        <div className="space-y-2 break-normal">
-                          <h3 className=" text-xl font-semibold">Container</h3>
-                          <p className=" leading-8 text-gray-lite ">
-                            1. Deploy Prometheus monitoring system, Jenkins, and
-                            applications developed by RD using containers.
-                          </p>
-                          <p className=" leading-8 text-gray-lite ">
-                            2. Managing on-premises Kubernetes clusters in a
-                            company environment, leveraging Helm for efficient
-                            package management and utilizing ArgoCD to automate
-                            deployment.
+                      <div className="flex items-start gap-3">
+                        <span className="text-xl font-semibold text-gray-500">
+                          4.
+                        </span>
+                        <div>
+                          <h4 className="text-xl font-semibold">
+                            Use terraform to manage cloud environments
+                          </h4>
+                          <p className="text-gray-lite leading-8">
+                            a. To accelerate the VM provisioning process and
+                            ensure all machine changes are properly tracked, I
+                            used Terraform to manage VM creation and
+                            version-controlled all configurations in Git.
+                            <br />
+                            b. Used Terraform to manage GCP security groups with
+                            many IPs, improving clarity and ease of maintenance.
                           </p>
                         </div>
                       </div>
-                      <div
-                        className="about-box dark:bg-transparent bg-zinc-100 dark:rounded-lg dark:border-[#212425] dark:border-2 dark:p-4"
-                        // style={{ background: "rgb(255, 240, 248)" }}
-                      >
-                        <GoogleCloudIcon className="inline-block bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-                        <AmazonWebIcon className="inline-block ml-2 bg-gradient-to-r  hover:from-pink-500 hover:to-yellow-500" />
-                        <div className="space-y-2 break-normal">
-                          <h3 className="text-xl font-semibold">
-                            Cloud System
-                          </h3>
-                          <p className=" leading-8 text-gray-lite ">
-                            1. Extensive experience in AWS and GCP, successfully
-                            establishing complete operational environments for
-                            the company. This includes configuring load
-                            balancers, VPCs, NAT gateways, CDNs, and storage
-                            buckets to ensure optimal performance.
+                      <div className="flex items-start gap-3">
+                        <span className="text-xl font-semibold text-gray-500">
+                          6.
+                        </span>
+                        <div>
+                          <h4 className="text-xl font-semibold">
+                            Implemented Nginx log analysis and visualization:
+                          </h4>
+                          <p className="text-gray-lite leading-8">
+                            a. Utilized Elasticsearch Ingest Pipelines to parse
+                            and process Nginx logs for structured data
+                            ingestion.
+                            <br />
+                            b. Integrated Grafana with Lucene queries of
+                            Elasticsearch to build visual dashboards, enabling
+                            real-time monitoring and trend analysis.
                           </p>
-                          <p className=" leading-8 text-gray-lite "></p>
                         </div>
                       </div>
                     </div>
